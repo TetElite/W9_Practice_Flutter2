@@ -7,7 +7,7 @@ import '../../dtos/artist_dto.dart';
 import 'artist_repository.dart';
 
 class ArtistRepositoryFirebase extends ArtistRepository {
-  final Uri artistsUri = Uri.https('YOUR FIREBASE URL', '/artists.json');
+  final Uri artistsUri = Uri.https('week-8-practice-265f7-default-rtdb.asia-southeast1.firebasedatabase.app', '/artists.json');
 
   @override
   Future<List<Artist>> fetchArtists() async {
